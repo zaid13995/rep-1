@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portkey Integration Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portkey Integration Demo</h1>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <h2>Send Message to Portkey</h2>
+                <div class="text-input">
+                    <textarea id="message-input" placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <div class="image-input">
+                    <h3>Upload Image (Optional)</h3>
+                    <input type="file" id="image-input" accept="image/*">
+                    <div id="image-preview"></div>
+                </div>
+                
+                <button id="send-button">Send to Portkey</button>
+            </div>
+            
+            <div class="response-section">
+                <h2>Response</h2>
+                <div id="response-display">
+                    <p class="placeholder">Response will appear here...</p>
+                </div>
+            </div>
+            
+            <div class="history-section">
+                <h2>History</h2>
+                <div id="history-list">
+                    <!-- History items will be added here dynamically -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 - Portkey Integration Website</p>
+        </footer>
+    </div>
+    
+    <script src="js/database.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
